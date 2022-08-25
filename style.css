@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Plain';
+  src: url('./fonts/microgramma.otf') format('woff'),
+      url('./fonts/microgramma.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plain';
+  src: url('./fonts/microgramma.otf') format('woff'),
+  url('./fonts/microgramma.otf') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plain';
+  src: url('./fonts/microgramma.otf') format('woff'),
+  url('./fonts/microgramma.otf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+--primary-color:        #fffbff;
+--white-color:          #ffffff;
+--dark-color:           #000000;
+--darker-color:         #000000;
+--about-bg-color:       #f9f9f9;
+--pink-color:           #da83d5;
+--purple-color:         #742669;
+--gray-color:           #909090;
+--link-color:           #c0c0c0;
+--p-color:              #666262;
+--base-font-family:     'Plain', sans-serif;
+--font-weight-bold:     bold;
+--font-weight-normal:   normal;
+--font-weight-light:    300;
+--font-weight-thin:     100;
+
+--h1-font-size:         48px;
+--h2-font-size:         36px;
+--h3-font-size:         28px;
+--h4-font-size:         24px;
+--h5-font-size:         22px;
+--h6-font-size:         18px;
+--p-font-size:          18px;
+--base-font-size:       16px;
+--menu-font-size:       14px;
+
+--border-radius-large:  100%;
+--border-radius-small:  2px;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+
+.fontcolor{
+  font-family: var(--base-font-family);
+  /*font-family: Consolas, monaco, monospace;*/
+  color: #fffbff;
+  font-size: 70px;
+}
+
+.gap{
+  padding-top: 100px;
+}
+
+body .container-fluid .row, html .container-fluid .row {
+  width: 100vw;
+
+}
+body .container-fluid .row span, html .container-fluid .row span {
+  font-size: 18px;
+  font-weight: 700;
+}
+body .container-fluid .row #wrapper, html .container-fluid .row #wrapper {
+  border-radius: 30px;
+  box-shadow: 5px 5px 25px #ff0000;
+}
+body .container-fluid .row #wrapper .exchange, html .container-fluid .row #wrapper .exchange {
+  font-size: 45px;
+  font-weight: 700;
+}
+body .container-fluid .row #wrapper .pair, html .container-fluid .row #wrapper .pair {
+  font-size: 20px;
+  font-weight: 500;
+}
+body .container-fluid .row #wrapper .price, html .container-fluid .row #wrapper .price {
+ 
+  font-size: 40px;
+  font-weight: 700;
+}
+body .container-fluid .row #wrapper .arrow, html .container-fluid .row #wrapper .arrow {
+  position: relative;
+  width: 2vw !important;
+  border: 1px solid red;
+}
+
+#videoBG {
+  position:fixed;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+      width:100%;
+      height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG { 
+      width:auto;
+      height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #videoBG {
+      display: block;
+  }
+  body {
+      background: url('gm.webp');
+       /* Full height */
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+  }
+
+  .fontcolor{
+    font-family: var(--base-font-family);
+    /*font-family: Consolas, monaco, monospace;*/
+    color: #fffbff;
+    font-size: 30px;
+}
+
+.gap{
+  padding-top: 30px;
+}
+
+body .container-fluid .row #wrapper, html .container-fluid .row #wrapper {
+  border-radius: 30px;
+  box-shadow: none;
+  border: 1px solid rgb(255, 255, 255);
+
+}
+
+}
