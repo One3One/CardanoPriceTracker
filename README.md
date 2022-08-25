@@ -5,8 +5,6 @@ donate me some $ADA jk
 
 $131
 
-How to run
-
 Sample Output
 
 ![](images/Capture.PNG)
