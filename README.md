@@ -1,9 +1,7 @@
 # CardanoPriceTracker
 [CardanoPriceTracker] is a live $ADA price tracker powered by coinbase websocket
 
-donate me some $ADA jk
-
-$131
+Buy Me A Coffee: $131
 
 Sample Output
 
